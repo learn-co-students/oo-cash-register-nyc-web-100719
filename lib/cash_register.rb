@@ -13,7 +13,8 @@ class CashRegister
         self.last_transaction_amt = 0
         quantity.times do
             self.items << title
-            self.total += price
+            #self.total += price
+            total += price
             self.last_transaction_amt += price
         end
     end
